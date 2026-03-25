@@ -27,10 +27,37 @@ Frontend Developer Intern | Internship, January 2026 — present
 * Work with WordPress: theme customization, modification of existing templates.
 
 ## Code Examples
-* https://github.com/YuliaKoryukina/Education_JS 
-* https://yuliakoryukina.website/cases/greenplate_case/index.html - food delivery landing page
-* https://yuliakoryukina.website/cases/renthouse_case/index.html - rental landing page
-* https://yuliakoryukina.website/ - business card website
+**Palindrome check function:**
+   ```javascript
+   function palindrom(yourtext) {
+     let sumSymbol = yourtext.length;
+     console.log("Number of characters: " + sumSymbol);
+     
+     let countWords = (yourtext) => yourtext.trim().split(/\s+/).length;
+     console.log("Number of words: " + countWords(yourtext));
+     
+     if (yourtext.includes(" ")) {
+       let textWithoutSpaces = yourtext.replaceAll(" ", "");
+       console.log("Text without spaces: " + textWithoutSpaces);
+     } else {
+       console.log("No spaces in text");
+     }
+     
+     let sentences = yourtext.match(/[^.!?]+[.!?]+/g) || [];
+     console.log("Number of sentences: " + sentences.length);
+     
+     let toLowerText = yourtext.toLowerCase();
+     let reversText = toLowerText.split("").reverse().join("");
+     if (toLowerText === reversText) {
+       console.log("This is a palindrome");
+     } else {
+       console.log("This is not a palindrome");
+     }
+     
+     let reverseText = yourtext.split("").reverse().join("");
+     console.log("Reversed version: " + reverseText);
+   }
+   palindrom("Шалаш");
 
 ## Education
 Saratov State Law Academy
