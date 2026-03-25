@@ -45,34 +45,38 @@
         <h2>Code Examples</h2>
         <p><strong>Palindrome check function:</strong></p>
         <pre><code>function palindrom(yourtext) {
-let sumSymbol = yourtext.length;
-console.log("Number of characters: " + sumSymbol);
-let countWords = (yourtext) => yourtext.trim().split(/\s+/).length;
-console.log("Number of words: " + countWords(yourtext));
-if (yourtext.includes(" ")) {
-let textWithoutSpaces = yourtext.replaceAll(" ", "");
-console.log("Text without spaces: " + textWithoutSpaces);
-} else {
-console.log("No spaces in text");
-}
-let sentences = yourtext.match(/[^.!?]+[.!?]+/g) || [];
-console.log("Number of sentences: " + sentences.length);
-
-let toLowerText = yourtext.toLowerCase();
-let reversText = toLowerText.split("").reverse().join("");
-if (toLowerText === reversText) {
-console.log("This is a palindrome");
-} else {
-console.log("This is not a palindrome");
-}
-let reverseText = yourtext.split("").reverse().join("");
-console.log("Reversed version: " + reverseText);
+  let sumSymbol = yourtext.length;
+  console.log("Number of characters: " + sumSymbol);
+  
+  let countWords = (yourtext) =&gt; yourtext.trim().split(/\s+/).length;
+  console.log("Number of words: " + countWords(yourtext));
+  
+  if (yourtext.includes(" ")) {
+    let textWithoutSpaces = yourtext.replaceAll(" ", "");
+    console.log("Text without spaces: " + textWithoutSpaces);
+  } else {
+    console.log("No spaces in text");
+  }
+  
+  let sentences = yourtext.match(/[^.!?]+[.!?]+/g) || [];
+  console.log("Number of sentences: " + sentences.length);
+  
+  let toLowerText = yourtext.toLowerCase();
+  let reversText = toLowerText.split("").reverse().join("");
+  if (toLowerText === reversText) {
+    console.log("This is a palindrome");
+  } else {
+    console.log("This is not a palindrome");
+  }
+  
+  let reverseText = yourtext.split("").reverse().join("");
+  console.log("Reversed version: " + reverseText);
 }
 palindrom("Шалаш");</code></pre>
 
-    <h2>Education</h2>
-    <p><strong>Saratov State Law Academy</strong><br>Bachelor's degree, 2021</p>
-    <h3>Courses:</h3>
+        <h2>Education</h2>
+        <p><strong>Saratov State Law Academy</strong><br>Bachelor's degree, 2021</p>
+        <h3>Courses:</h3>
         <ul>
             <li>Web development for beginners: HTML and CSS (Stepik)</li>
             <li>Web technologies: entry level</li>
