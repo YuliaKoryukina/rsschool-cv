@@ -58,7 +58,7 @@ Frontend Developer Intern | Internship, January 2026 — present
      console.log("Reversed version: " + reverseText);
    }
    palindrom("Шалаш");
-
+``` 
 ## Education
 Saratov State Law Academy
 Bachelor's degree, 2021
