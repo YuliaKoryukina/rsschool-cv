@@ -2,65 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV IULIIA</title>
+    <title>Iuliia Koriukina - Frontend Developer & UI/UX Designer Resume</title>
+    <meta name="description" content="Resume of Iuliia Koriukina, Junior Frontend Developer and UI/UX Designer">
 </head>
 <body>
-<div class="resume-wrapper">
-    <div class="resume">
-        <h1>Iuliia Koriukina</h1>
-        <h2>Contact Information</h2>
-        <ul class="contact-list">
-            <li>Belgrade, Serbia</li>
-            <li><a href="mailto:koryuckina.yu@yandex.ru">koryuckina.yu@yandex.ru</a></li>
-            <li><a href="https://github.com/YuliaKoryukina">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/koryukina-yulia/">LinkedIn</a></li>
-            <li><a href="https://yuliakoryukina.website/">Portfolio website</a></li>
-            <li>Discord: silence_julia0019</li>
-        </ul>
-        <h2>About Me</h2>
-        <p>Junior frontend developer and UI/UX designer. I am learning to create modern interfaces and clean code. I
-            strive to combine visual aesthetics with technical implementation. Currently I am doing an internship where
-            I create landing pages and work with WordPress. I am looking for an opportunity to continue developing in
-            this field and learn from more experienced colleagues. I am a quick learner, attentive to details and
-            responsible.</p>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5: semantic markup, accessibility, modern tags</li>
-            <li>CSS3: Flexbox, Grid, responsive design</li>
-            <li>JavaScript: actively learning, ES6+ syntax</li>
-            <li>CMS: WordPress (theme customization, template modification)</li>
-            <li>Tools: Git, GitHub, VS Code</li>
-            <li>Design: Figma (prototyping, layouts, components), basic Photoshop</li>
-            <li>UI/UX: user flow design, typography, composition, color</li>
-        </ul>
-        <h2>Work Experience</h2>
-        <p><strong>Frontend Developer Intern</strong> | Internship, January 2026 — present</p>
-        <ul>
-            <li>Develop and customize landing pages under the guidance of a mentor.</li>
-            <li>Create pages using HTML/CSS, add styles and scripts.</li>
-            <li>Work with WordPress: theme customization, modification of existing templates.</li>
-        </ul>
-        <h2>Code Examples</h2>
-        <p><strong>Palindrome check function:</strong></p>
-        <pre><code>function palindrom(yourtext) {
+    <main>
+        <article>
+            <header>
+                <h1>Iuliia Koriukina</h1>
+            </header>
+            <section>
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Belgrade, Serbia</li>
+                    <li><a href="mailto:koryuckina.yu@yandex.ru">koryuckina.yu@yandex.ru</a></li>
+                    <li><a href="https://github.com/YuliaKoryukina">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/koryukina-yulia/">LinkedIn</a></li>
+                    <li><a href="https://yuliakoryukina.website/">Portfolio website</a></li>
+                    <li>Discord: silence_julia0019</li>
+                </ul>
+            </section>
+            <section>
+                <h2>About Me</h2>
+                <p>Junior frontend developer and UI/UX designer. I am learning to create modern interfaces and clean code. I strive to combine visual aesthetics with technical implementation. Currently I am doing an internship where I create landing pages and work with WordPress. I am looking for an opportunity to continue developing in this field and learn from more experienced colleagues. I am a quick learner, attentive to details and responsible.</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5: semantic markup, accessibility, modern tags</li>
+                    <li>CSS3: Flexbox, Grid, responsive design</li>
+                    <li>JavaScript: actively learning, ES6+ syntax</li>
+                    <li>CMS: WordPress (theme customization, template modification)</li>
+                    <li>Tools: Git, GitHub, VS Code</li>
+                    <li>Design: Figma (prototyping, layouts, components), basic Photoshop</li>
+                    <li>UI/UX: user flow design, typography, composition, color</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Work Experience</h2>
+                <article>
+                    <h3>Frontend Developer Intern</h3>
+                    <p>Internship, January 2026 — present</p>
+                    <ul>
+                        <li>Develop and customize landing pages under the guidance of a mentor.</li>
+                        <li>Create pages using HTML/CSS, add styles and scripts.</li>
+                        <li>Work with WordPress: theme customization, modification of existing templates.</li>
+                    </ul>
+                </article>
+            </section>
+            <section>
+                <h2>Code Examples</h2>
+                <article>
+                    <h3>Palindrome check function</h3>
+                    <pre><code>function palindrom(yourtext) {
   let sumSymbol = yourtext.length;
   console.log("Number of characters: " + sumSymbol);
-  
+
   let countWords = (yourtext) =&gt; yourtext.trim().split(/\s+/).length;
   console.log("Number of words: " + countWords(yourtext));
-  
+
   if (yourtext.includes(" ")) {
     let textWithoutSpaces = yourtext.replaceAll(" ", "");
     console.log("Text without spaces: " + textWithoutSpaces);
   } else {
     console.log("No spaces in text");
   }
-  
+
   let sentences = yourtext.match(/[^.!?]+[.!?]+/g) || [];
   console.log("Number of sentences: " + sentences.length);
-  
+
   let toLowerText = yourtext.toLowerCase();
   let reversText = toLowerText.split("").reverse().join("");
   if (toLowerText === reversText) {
@@ -68,26 +79,34 @@
   } else {
     console.log("This is not a palindrome");
   }
-  
+
   let reverseText = yourtext.split("").reverse().join("");
   console.log("Reversed version: " + reverseText);
 }
 palindrom("Шалаш");</code></pre>
-
-        <h2>Education</h2>
-        <p><strong>Saratov State Law Academy</strong><br>Bachelor's degree, 2021</p>
-        <h3>Courses:</h3>
-        <ul>
-            <li>Web development for beginners: HTML and CSS (Stepik)</li>
-            <li>Web technologies: entry level</li>
-            <li>FRONTEND: HTML CSS JS</li>
-            <li>JavaScript for beginners</li>
-        </ul>
-        <h2>English Language</h2>
-        <ul>
-            <li>Level: Elementary (A2)</li>
-        </ul>
-    </div>
-</div>
+                </article>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <article>
+                    <h3>Saratov State Law Academy</h3>
+                    <p>Bachelor's degree, 2021</p>
+                </article>
+                <h3>Courses:</h3>
+                <ul>
+                    <li>Web development for beginners: HTML and CSS (Stepik)</li>
+                    <li>Web technologies: entry level</li>
+                    <li>FRONTEND: HTML CSS JS</li>
+                    <li>JavaScript for beginners</li>
+                </ul>
+            </section>
+            <section>
+                <h2>English Language</h2>
+                <ul>
+                    <li>Level: Elementary (A2)</li>
+                </ul>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
