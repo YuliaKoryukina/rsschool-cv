@@ -1,0 +1,150 @@
+:root {
+    --background-color: #f8f9fd;
+    --textcolor: #6c63ff;       
+    --card-bg: rgba(255, 255, 255, 0.8); 
+    --shadow-color: rgba(108, 99, 255, 0.12); 
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif; 
+    background-color: var(--background-color);
+    color: #2d3436; 
+    line-height: 1.7;
+    padding: 60px 20px;
+}
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 50px;      
+    text-align: center;
+    color: var(--textcolor);
+    margin-bottom: 50px;
+    font-weight: 700; 
+    letter-spacing: -1px; 
+}
+h2 {
+    font-size: 29px;
+    color: var(--textcolor);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+h2::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(108, 99, 255, 0.3), transparent);
+}
+section:first-of-type {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px); 
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    box-shadow: 0 20px 40px var(--shadow-color);
+    margin-bottom: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.my-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+ul {
+    list-style: none; 
+}
+li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: var(--textcolor);
+    font-weight: 500;
+}
+li::before {
+    content: "◆"; 
+    position: absolute;
+    left: 0;
+    color: var(--textcolor);
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-weight: 500;
+}
+a:hover {
+    opacity: 0.7;  
+}
+article {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px var(--shadow-color);
+    background: #fff;
+}
+
+pre {
+    background-color: #2d3436; 
+    color: #dfe6e9;
+    padding: 25px;
+    border-radius: 15px;
+    overflow-x: auto;
+    border-left: 6px solid var(--textcolor);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+pre::-webkit-scrollbar {
+    height: 6px; 
+}
+pre::-webkit-scrollbar-thumb {
+    background-color: var(--textcolor);
+    border-radius: 10px;
+}
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+footer {
+    max-width: 850px;
+    margin: 80px auto 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+footer .logo {
+    height: 35px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    section:first-of-type {
+        flex-direction: column;
+        padding: 30px;
+    }
+    h1 { font-size: 2.5rem; }
+}
