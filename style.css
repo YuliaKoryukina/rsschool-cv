@@ -3,7 +3,7 @@
     --textcolor: #64485C;  
     --card-bg: rgba(255, 255, 255, 0.9); 
     --shadow-color: rgba(100, 72, 92, 0.12); 
-    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+ 
 }
 * {
     margin: 0;
@@ -100,11 +100,7 @@ article {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-article:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px var(--shadow-color);
-    background: #fff;
-}
+
 
 pre {
     background-color: #2d3436; 
