@@ -21,7 +21,7 @@ Junior frontend developer and UI/UX designer. I am learning to create modern int
 UI/UX: user flow design, typography, composition, color
 
 ## Work Experience
-Frontend Developer Intern | Internship, January 2026 — present
+Frontend Developer Intern | Askat Tech — Jan 2026 – June 2026
 * Develop and customize landing pages under the guidance of a mentor.
 * Create pages using HTML/CSS, add styles and scripts.
 * Work with WordPress: theme customization, modification of existing templates.

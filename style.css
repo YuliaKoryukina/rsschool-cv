@@ -1,8 +1,8 @@
 :root {
-    --background-color: #f8f9fd;
-    --textcolor: #6c63ff;       
-    --card-bg: rgba(255, 255, 255, 0.8); 
-    --shadow-color: rgba(108, 99, 255, 0.12); 
+    --background-color: #f8f6f8;
+    --textcolor: #64485C;  
+    --card-bg: rgba(255, 255, 255, 0.9); 
+    --shadow-color: rgba(100, 72, 92, 0.12); 
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 * {
@@ -13,7 +13,7 @@
 body {
     font-family: 'Inter', 'Segoe UI', sans-serif; 
     background-color: var(--background-color);
-    color: #2d3436; 
+    color: #382531;
     line-height: 1.7;
     padding: 60px 20px;
 }
